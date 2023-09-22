@@ -1,9 +1,6 @@
 import app from "./app.js";
 import mongoose from "mongoose";
 
-const DB_HOST =
-  "mongodb+srv://goose_trevor12:12345678goose@cluster0.bvgb9lr.mongodb.net/my-contacts?retryWrites=true&w=majority&appName=AtlasApp";
-
 mongoose
   .connect(process.env.DB_HOST)
   .then(() => {
